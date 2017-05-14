@@ -1,0 +1,152 @@
+@page {
+  size: A4;
+}
+
+@media all {
+  html, body {
+    font-size: 14pt;
+    font-family: "Muli","@TakaoMincho","Takao Mincho","@IPAexMincho","IPAexMincho","serif";
+    line-height: 120%;
+    font-weight: 200;
+  }
+
+  code {
+    font-family: "Hack","Mplus","monospace";
+  }
+
+  header {
+    page-break-before: avoid;
+    page-break-after: always;
+    text-align: center;
+    padding-top: 100mm;
+  }
+
+  header h1 {
+    page-break-before: avoid;
+    margin-left: 0pt;
+  }
+
+  nav:lang(en)::before {
+    content: "Table of Contents";
+    font-size: 2em;
+    line-height: 120%;
+  }
+
+  nav:lang(ja)::before {
+    content: "目次";
+    font-size: 2em;
+    line-height: 120%;
+  }
+
+  nav {
+    margin-top: 3.5em;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  nav ul {
+    list-style: none;
+    -webkit-padding-start: 15px;
+  }
+
+  nav ul li {
+    padding-top: 5px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+  }
+
+  h1 {
+    padding-top: 30pt;
+    page-break-before: always;
+    page-break-after: avoid;
+    margin-left: 0.67em;
+    -webkit-margin-before: 0em;
+    padding-left: 0;
+    line-height: 150%;
+    font-weight: 500;
+  }
+
+  h1 span {
+    margin-left: -0.67em;
+    margin-right: 0em;
+  }
+
+  h2 {
+    padding-top: 20pt;
+    page-break-after: avoid;
+  }
+
+  h3 {
+    padding-top: 10pt;
+    page-break-after: avoid;
+  }
+
+  p {
+    page-break-before: avoid;
+    page-break-inside: avoid;
+    text-indent: 10pt;
+    padding: 3px;
+  }
+
+  ul {
+    page-break-before: avoid;
+    page-break-inside: avoid;
+  }
+
+  pre {
+    page-break-before: avoid;
+    page-break-inside: avoid;
+    font-size: .8em;
+    overflow: hidden;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    border-radius: 1px;
+    padding: 2px;
+    background-color: #eeeeee;
+    border: 1px solid #bbbbbb;
+  }
+
+  code {
+    text-indent: 0;
+    page-break-before: avoid;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow: hidden;
+  }
+
+  p code {
+    font-size: .9em;
+    background-color: #eeeeee;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
+  .pageBreak {
+    page-break-before: always;
+  }
+
+
+  p .footer {
+    font-weight: 200;
+    font-size: 4pt;
+  }
+
+  .sourceCode {
+    page-break-before: avoid;
+    page-break-inside: avoid;
+    overflow: hidden;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  div.divFooter {
+    position: fixed;
+    bottom: 0;
+  }
+  /* ... the rest of the rules ... */
+}
